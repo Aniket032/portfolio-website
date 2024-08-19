@@ -26,7 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
           dark:bg-zinc-950 dark:text-[#dddd] dark:text-opacity-90
 
-          sm:pt-36 dark:[&::-webkit-scrollbar]:bg-zinc-950
+          dark:[&::-webkit-scrollbar]:bg-zinc-950
+
+          sm:pt-36
         `}
       >
         <ThemeContextProvider>
