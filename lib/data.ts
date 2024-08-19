@@ -1,107 +1,100 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import React from 'react'
+import { CgWorkAlt } from 'react-icons/cg'
+import { FaReact } from 'react-icons/fa'
+import { LuGraduationCap } from 'react-icons/lu'
+import Airport from '@/public/Airport.png'
+import EasyBank from '@/public/EasyBank.png'
+import Iphone from '@/public/Iphone.png'
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
+    name: 'Home',
+    hash: '#home',
   },
   {
-    name: "About",
-    hash: "#about",
+    name: 'About',
+    hash: '#about',
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: 'Projects',
+    hash: '#projects',
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: 'Skills',
+    hash: '#skills',
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: 'Experience',
+    hash: '#experience',
   },
   {
-    name: "Contact",
-    hash: "#contact",
+    name: 'Contact',
+    hash: '#home',
   },
-] as const;
+] as const
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: 'IEEE CS, Student Chapter',
+    location: 'Senior Core Member / Full Stack Developer',
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      'Collaborated as an active team member in several projects within the chapter, contributing to the successful execution of diverse technical initiatives. Mentored 100+ junior members during the onboarding , providing guidance and helping them explore suitable career paths and fields of interest.',
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: 'Oct. 2021 - Present',
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: 'InfoEdge India',
+    location: 'SDE Intern',
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      'Designed and developed a user-friendly front-facing dashboard, reducing backend/frontend dependencies for A/B experiments used Next.js, Typescript, Tailwindcss.',
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: 'Sept. 2023 - December 2023',
   },
-] as const;
+] as const
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: 'Iphone Landing Page',
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      'Experience the cutting-edge design and advanced features of the iPhone 15 Pro on a stunning landing page crafted with precision. ',
+    tags: ['React', 'Tailwind', 'gsap', 'Three.js'],
+    imageUrl: Iphone,
+    url: 'https://github.com/Aniket032/Iphone15Pro_landing',
   },
   {
-    title: "rmtDev",
+    title: 'MIS of Kalaburagi Airport',
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      'The app features real-time task tracking, progress monitoring for department admins and the Airport Director.',
+    tags: ['Node.js', 'TypeScript', 'PostgreSQL', 'TypeORM'],
+    imageUrl: Airport,
+    url: 'https://drive.google.com/file/d/177TGmq-lph8iJ1yoYWa6m7W7b_f9WSLl/view',
   },
   {
-    title: "Word Analytics",
+    title: 'Easybank Landing Page',
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      'Developed a fully responsive website from scratch meeting all project requirements and design specifications.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'SCSS'],
+    imageUrl: EasyBank,
+    url: 'https://github.com/Aniket032/Landing-page-Easybank',
   },
-] as const;
+]
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
-] as const;
+  'HTML',
+  'CSS',
+  'SCSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Next.js',
+  'Node.js',
+  'Git',
+  'Tailwind',
+  'Prisma',
+  'Express',
+  'PostgreSQL',
+  'Python',
+  'gsap',
+  'Framer Motion',
+  'Linux',
+] as const

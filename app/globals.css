@@ -2,3 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --line-color: #e2e8f0;
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+@layer utilities {
+  .scrollbar::-webkit-scrollbar-track {
+    background: #000;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #000;
+  }
+}

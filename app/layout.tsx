@@ -4,6 +4,9 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Header from '@/components/header'
+import Footer from '@/components/footer'
+import ThemeSwitch from '@/components/theme-switch'
+import ThemeContextProvider from '@/context/theme-context'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,20 +17,27 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className /*bg-gray-50 text-gray-950*/}
+        className={`
+          ${inter.className /*bg-gray-50 text-gray-950*/}
 
           relative bg-gray-50 pt-28 text-gray-950
 
-          sm:pt-36
+          dark:bg-zinc-950 dark:text-[#dddd] dark:text-opacity-90
+
+          sm:pt-36 dark:[&::-webkit-scrollbar]:bg-zinc-950
         `}
       >
-        <CanvasAnimation />
-        {/* <div className="bg-[#fbe2e3] absolute top-[-6rem] righ-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div> */}
-        <div></div>
-        <Header />
-        {children}
+        <ThemeContextProvider>
+          <CanvasAnimation />
+          {/* <div className="bg-[#fbe2e3] absolute top-[-6rem] righ-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"></div> */}
+          <div></div>
+          <Header />
+          {children}
+          <Footer />
+          <ThemeSwitch />
+        </ThemeContextProvider>
       </body>
     </html>
   )

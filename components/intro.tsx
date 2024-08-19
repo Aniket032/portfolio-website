@@ -2,7 +2,7 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
-import PP from '../public/PP.jpeg'
+import PP2 from '../public/PP2.png'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
@@ -11,7 +11,16 @@ import { HiDownload } from 'react-icons/hi'
 
 const Intro = () => {
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      className={`
+      mb-28 max-w-[50rem] scroll-mt-28
+
+      text-center
+
+      sm:mb-0
+    `}
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -20,32 +29,38 @@ const Intro = () => {
             transition={{ type: 'tween', duration: 0.75 }}
           >
             <Image
-              src={PP}
+              src={PP2}
               alt="profilePic"
-              className="h-23 w-24 rounded-full border-[0.35rem] border-white shadow-xl"
+              className={`
+                h-23 w-24 rounded-full border-[0.35rem] border-white
+
+                shadow-xl
+
+                dark:border-white/80
+              `}
             />
           </motion.div>
           <motion.span
             className="absolute bottom-0 right-0 text-3xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: 'spring', delay: 0.85, stiffness: 155 }}
+            transition={{ type: 'spring', delay: 1.5, stiffness: 155 }}
           >
             👋
           </motion.span>
         </div>
       </div>
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <span className="font-bold">Hello, I'm Aniket.</span> I'm a{' '}
-        <span className="font-bold">full-stack developer. </span>I enjoy building{' '}
-        <span className="italic">sites & apps</span> and have experience in building great Website
-        applications with{' '}
-        <span className="underline">
+        <span className="font-bold dark:text-white">Hello, I'm Aniket.</span> I'm a{' '}
+        <span className="font-bold dark:text-white">full-stack developer. </span>I enjoy building{' '}
+        <span className="italic dark:text-white">sites & apps</span> and have experience in building
+        great Website applications with{' '}
+        <span className={`underline`}>
           React.js/ Next.js / Nodejs / and its libraries and frameworks.
         </span>
       </motion.h1>
@@ -61,11 +76,11 @@ const Intro = () => {
         transition={{ duration: 1.5 }}
       >
         <Link
-          href="#contact"
+          href="mailto:aniket.chawla03@gmail.com"
           className={`group
             flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none
 
-            transition
+            transition dark:bg-gray-50 dark:text-gray-900
 
             focus:scale-110 hover:scale-110
 
@@ -86,7 +101,7 @@ const Intro = () => {
         <a
           className={`
             group flex items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3
-            outline-none transition
+            outline-none transition dark:bg-white/5
 
             focus:scale-110
 
@@ -108,13 +123,17 @@ const Intro = () => {
         </a>
         <a
           className={`
-          flex items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700
-          outline-none transition
+            flex items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700
+            outline-none transition
 
-          focus:scale-[1.15] focus:text-gray-950
+            dark:bg-white/5 dark:text-white/70
 
-          hover:scale-[1.15] hover:text-gray-950
-        `}
+            dark:hover:text-white/90 focus:scale-[1.15]
+
+            focus:text-gray-950
+
+            hover:scale-[1.15] hover:text-gray-950
+          `}
           href="https://www.linkedin.com/in/aniketchawla"
           target="_blank"
         >
@@ -123,7 +142,8 @@ const Intro = () => {
         <a
           className={`
             flex items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700
-            outline-none transition
+            outline-none transition dark:bg-white/5 dark:text-white/70 dark:hover:text-white/90
+
 
             focus:scale-[1.15] focus:text-gray-950
 
