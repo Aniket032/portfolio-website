@@ -37,7 +37,7 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             viewport={{
-              once: true,
+              once: false,
             }}
             custom={index}
           >

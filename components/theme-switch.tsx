@@ -8,11 +8,15 @@ const ThemeSwitch = () => {
   return (
     <button
       className={`
-        fixed bottom-5 right-5 flex h-[3rem] w-[3rem] items-center justify-center
-        rounded-full border border-white border-opacity-40 bg-white bg-opacity-80 shadow-2xl
+        fixed bottom-5 right-5 flex h-[3rem] w-[3rem] items-center justify-center rounded-full
+        border border-white border-opacity-40 bg-white bg-opacity-80 shadow-2xl
         backdrop-blur-[0.5rem] transition-all
+
         dark:bg-zinc-950
+
         hover:scale-[1.15]
+
+        sm:right-8 sm:top-8
       `}
       onClick={toggleTheme}
     >

@@ -125,7 +125,7 @@ const CanvasAnimation: React.FC = () => {
 
       start()
     }
-  }, [size.width, size.height])
+  }, [size.width])
 
   return (
     <div
