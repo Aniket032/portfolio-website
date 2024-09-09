@@ -107,7 +107,7 @@ const Intro = () => {
 
             hover:scale-110
           `}
-          href="https://drive.google.com/file/d/1Lo5zmeQaUyzbofaJPmFfNYBkCVCq6hE7/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1HzYSLAeX1jMZ-UlQ428okjs1fp2zB4-Z/view?usp=drive_link"
           target="_blank"
         >
           Download Resume{' '}
